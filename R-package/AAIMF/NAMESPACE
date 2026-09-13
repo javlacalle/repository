@@ -1,0 +1,125 @@
+
+export(
+  make_model,
+
+  log_sum_exp,
+  quadratic_byrows,
+  logdet_spd_mat,
+  log_wishart_constant,
+  expected_log_det_wishart,
+  entropy_wishart,
+  entropy_dirichlet,
+  entropy_gamma_rate,
+
+  log_predictive_density,
+
+  mog_sim,
+
+  mog_nw_upd_aux,
+  mog_nw_upd,
+  mog_nw_upd_resp,
+  mog_nw_init,
+  mog_nw_elbo,
+  mog_nw_posteriors,
+  mog_normal_wishart,
+
+  mog_ng_upd_aux,
+  mog_ng_upd,
+  mog_ng_upd_resp,
+  mog_ng_init,
+  mog_ng_elbo,
+  mog_ng_posteriors,
+  mog_normal_gamma,
+
+  mog_rprobs_from_amortization,
+  mog_init,
+  mog_elbo,
+  mog_cavi,
+  mog_cavi_amortized,
+
+  get_pars_structure,
+  vec_to_list,
+  name_vec_pars,
+  get_pars_structure_v2,
+  vec_to_list_v2,
+
+  var_mog_sim,
+  build_var_lags_matrix,
+  B_to_A,
+
+  em_log_scores,
+  em_expectation,
+  em_maximization,
+  em_init_resp,
+  em_init,
+  em_loglik,
+  em_elbo,
+  em_run,
+  em_experimental_run,
+  avem_run,
+
+  pi_to_eta,
+  eta_to_pi,
+  chol_transform,
+  chol_transform_undo,
+
+  rprobs_from_amortization,
+  pretrain_amortization_kmeans,
+
+  var_mog_nw_init,
+  var_mog_make_G,
+  var_mog_nw_upd,
+  var_mog_nw_upd_resp,
+  logdet_spd_mat_v2,
+  log_multivariate_gamma,
+  var_mog_nw_elbo,
+  var_mog_normal_wishart,
+
+  var_mog_ng_expand_D,
+  var_mog_ng_logdet_spd,
+  var_mog_ng_make_G,
+  var_mog_ng_init,
+  var_mog_ng_upd,
+  var_mog_ng_upd_resp,
+  var_mog_ng_elbo,
+  var_mog_ng_posteriors,
+  var_mog_normal_gamma,
+
+  init_network_random,
+  forward_network,
+
+  build_lags_matrix,
+  softmax_rows,
+
+  sort_var_mog,
+  order_mog_ng_pars,
+
+  var_mog_draw_pars,
+
+  plot_fitted_log_odds
+)
+
+S3method(confint, avem_fit)
+S3method(confint, mog_normal_gamma_cavi)
+
+S3method(print, em_fit)
+S3method(print, em_ci)
+S3method(print, em_experimental_fit)
+
+S3method(print, mog_sim)
+
+S3method(print, var_mog_normal_wishart_cavi)
+S3method(print, var_mog_normal_gamma_cavi)
+S3method(print, mog_normal_wishart_cavi)
+S3method(print, mog_normal_gamma_cavi)
+S3method(print, acavi)
+
+S3method(confint, mog_normal_gamma_cavi)
+S3method(print, mog_ng_cavi_ci)
+S3method(fitted, avem_fit)
+
+importFrom("stats", "kmeans")
+importFrom("stats", "rnorm")
+importFrom("stats", "optim")
+importFrom("MASS", "mvrnorm")
+importFrom("gtools", "rdirichlet")

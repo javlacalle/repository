@@ -1,0 +1,15 @@
+Package: AAIMF
+Version: 0.1.8
+Date: 2026-08-25
+Title: Filtering-based and Bayesian inference in dynamic models.
+Authors@R: person("Javier", "López-de-Lacalle", email="javlacalle@yahoo.es", role=c("aut", "cre"))
+Description: Tools to reproduce the results presented in the degree project
+			 for the Applied Artificial Intelligence and its Mathematical Foundations
+			 program of the University of the Basque Country EHU.
+Maintainer: Javier López-de-Lacalle <javlacalle@yahoo.es>
+Depends: R (>= 4.0.0)
+Imports: gtools, MASS, stats
+NeedsCompilation: no
+Encoding: UTF-8
+License: GPL-3
+URL: https://jalobe.com

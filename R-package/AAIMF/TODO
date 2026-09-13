@@ -1,0 +1,16 @@
+
+o Print method for the class of models var_mog.
+
+o Continue designing the interface mog_cavi() similarly to avem_em(),
+	unifying different approaches in a unique simple interface.
+
+	- There are still parts of the code that can be reused and simplified,
+		eg. reuse rprobs_from_amortization() instead of mog_rprobs_from_amortization().
+
+	- Incorporate amortization in the CAVI method in the same way as in AVEM.
+
+	- Simplify the way mog_cavi handles the seeds used for different tasks.
+		Do it as in avem_em().
+
+	- Sort method for the class of fitted models '_cavi'. Organize the current
+		code in a separate function similarly to sort_var_mog() for avem().
